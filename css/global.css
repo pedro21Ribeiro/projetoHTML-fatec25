@@ -171,3 +171,58 @@ h1 {
 .video-container {
     margin-left: 50%;
 }
+
+.top-monkeys {
+    counter-reset: list-counter;
+    list-style: none;
+    padding: 0;
+}
+
+.top-monkeys li {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    padding-left: 80px;
+}
+
+.top-monkeys li::before {
+    counter-increment: list-counter;
+    content: counter(list-counter);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #3498db;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.top-monkeys h4 {
+    color: #e74c3c;
+    margin-top: 0;
+}
+
+.scientific-name {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.fun-fact {
+    background: #f1c40f;
+    color: #34495e;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
