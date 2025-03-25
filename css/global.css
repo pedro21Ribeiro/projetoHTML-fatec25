@@ -1,0 +1,169 @@
+:root{
+    --bg-dark-brown: #1a100e;
+    --bg-medium-brown: #795548;
+    --bg-light-brown: #A1887F;
+    --bg-leaf-green: #072708;
+    --text-white: #FFFFFF;
+    --text-black: #212121;
+    --text-light-gray: #b1b1b1;
+    --text-light-yellow: #FFD54F;
+}
+
+* {
+    margin: 0;
+    color: var(--text-white);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: var(--bg-dark-brown);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: var(--bg-medium-brown);
+}
+
+nav a{
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding-top: 60px;
+}
+
+content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+content *{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img{
+    padding: 4px;
+    border: solid 2px;
+    border-radius: 7px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+    transform: scaleX(-1);
+    border: none;
+    padding: 0;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 10px;
+}
+
+.nav-menu a{
+    margin: 0 10px;
+    color: var(--text-light-gray);
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover{
+    color: var(--text-white);
+}
+
+.form-container {
+    background-color: var(--bg-medium-brown);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea,
+.form-container button {
+    margin-bottom: 10px;
+    color: var(--text-black);
+}
+
+select option{
+    color: var(--text-black);
+}
+
+.form-container button {
+    background-color: var(--bg-leaf-green);
+    color: var(--text-white);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #065a0a;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--bg-light-brown);
+}
+
+th {
+    background-color: var(--bg-medium-brown);
+    color: var(--text-white);
+}
+
+tr:hover {
+    background-color: var(--bg-light-brown);
+}
+
+.wiki-link {
+    color: var(--text-light-yellow);
+    text-decoration: none;
+}
+
+.wiki-link:hover {
+    text-decoration: underline;
+}
+
+.table-container {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}

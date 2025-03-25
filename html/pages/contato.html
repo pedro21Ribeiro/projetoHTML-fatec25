@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - O Santuário do Macaco</title>
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <nav>
+        <a href="/html/index.html"><img class="logo" src="/public/icons/monkey-svgrepo-com.svg" alt="Macaco"></a>
+        <div class="nav-menu">
+            <a href="/html/pages/contato.html">Contato</a>
+            <a href="/html/pages/sobre.html">Sobre</a>
+            <a href="/html/pages/macacos.html">Macacos</a>
+        </div>
+    </nav>
+    
+    <content>
+        <header>
+            <h1>Entre em Contato</h1>
+            <p>Tem alguma dúvida, encontrou um erro ou quer mais informações? Preencha o formulário abaixo e retornaremos o mais breve possível.</p>
+        </header>
+        
+        <section class="form-container">
+            <form action="#" method="POST">
+                <label for="nome">Nome*:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="motivo">Motivo de contato*:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecione um motivo</option>
+                    <option value="erro">Erro no site</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="informacao">Informação errada</option>
+                </select>
+                
+                <label for="mensagem">Mensagem*:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                
+                <label>Deseja receber uma cópia no seu email?*</label>
+                <div>
+                    <input type="radio" id="sim" name="copia" value="sim" required>
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="copia" value="nao" required>
+                    <label for="nao">Não</label>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </content>
+    
+    <footer>
+        <p>&copy; 2025 O Santuário do Macaco. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
