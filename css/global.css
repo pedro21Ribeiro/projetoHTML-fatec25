@@ -171,58 +171,92 @@ h1 {
 .video-container {
     margin-left: 50%;
 }
+:root{
+    --bg-dark-brown: #1a100e;
+    --bg-medium-brown: #795548;
+    --bg-light-brown: #A1887F;
+    --bg-leaf-green: #072708;
+    --text-white: #FFFFFF;
+    --text-black: #212121;
+    --text-light-gray: #b1b1b1;
+    --text-light-yellow: #FFD54F;
+}
 
 .top-monkeys {
     counter-reset: list-counter;
     list-style: none;
     padding: 0;
+    max-width: 800px;
+    margin: 50px auto;
 }
 
 .top-monkeys li {
-    background: white;
-    margin-bottom: 15px;
-    padding: 15px;
+    background: var(--bg-medium-brown);
+    margin-bottom: 20px;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
-    padding-left: 80px;
+    padding-left: 90px;
+    border: 1px solid var(--bg-light-brown);
+    transition: transform 0.3s ease;
+}
+
+.top-monkeys li:hover {
+    transform: translateY(-5px);
 }
 
 .top-monkeys li::before {
     counter-increment: list-counter;
     content: counter(list-counter);
     position: absolute;
-    left: 10px;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    background: #3498db;
-    color: white;
-    width: 50px;
-    height: 50px;
+    background: var(--bg-leaf-green);
+    color: var(--text-light-yellow);
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    border: 3px solid var(--bg-light-brown);
 }
 
 .top-monkeys h4 {
-    color: #e74c3c;
+    color: var(--text-light-yellow);
     margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .scientific-name {
     font-style: italic;
-    color: #7f8c8d;
+    color: var(--text-light-gray);
+    margin-bottom: 10px;
+    display: block;
 }
 
 .fun-fact {
-    background: #f1c40f;
-    color: #34495e;
-    padding: 5px 10px;
-    border-radius: 4px;
+    background: var(--bg-leaf-green);
+    color: var(--text-light-yellow);
+    padding: 8px 15px;
+    border-radius: 20px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: bold;
+    font-size: 0.9rem;
+    border: 1px solid var(--bg-light-brown);
+}
+
+.page-header {
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+
+.top-monkeys li>p{
+    color: var(--text-white);
 }
